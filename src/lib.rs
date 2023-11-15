@@ -27,6 +27,7 @@
 #![crate_type = "lib"]
 
 pub extern crate libc;
+pub extern crate thiserror;
 #[macro_use]
 extern crate bitflags;
 
@@ -36,6 +37,7 @@ pub use wrapper::state::{
 
   Arithmetic,
   Comparison,
+  Error,
   ThreadStatus,
   GcOption,
   Type,
